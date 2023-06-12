@@ -1,0 +1,82 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.19s (165889 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode   Workload      Report Type      Benchmarks
+--------   --------   --------   -----------------   --------------------------
+validate   speed      refspeed   SPECspeed2017_int   625.x264_s                
+-------------------------------------------------------------------------------
+
+Setting up environment for running 625.x264_s...
+Starting runcpu for 625.x264_s...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 625.x264_s
+Compiling Binaries
+  Up to date 625.x264_s base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 625.x264_s refspeed (ref) base Rubens-m64: run_base_refspeed_Rubens-m64.0001
+Running Benchmarks
+  Running 625.x264_s refspeed (ref) base Rubens-m64 [2023-06-05 01:01:05]
+Success: 1x625.x264_s
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refspeed (ref)
+   metric: SPECspeed2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.082.intspeed.refspeed.rsf
+Parsing flags for 625.x264_s base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.082.intspeed.refspeed.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.082.intspeed.refspeed.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.082.intspeed.refspeed.csv
+    format: PDF -> 
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.082.intspeed.refspeed.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.082.intspeed.refspeed.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.082.intspeed.refspeed.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.082.log
+
+runcpu finished at 2023-06-05 01:09:44; 576 total seconds elapsed
+
+Performance counter stats for 'runcpu --config=projeto04 --noreportable --iterations=1 625.x264_s':
+
+         572433.65 msec task-clock                #    0.992 CPUs utilized
+             18983      context-switches          #   33.162 /sec
+               270      cpu-migrations            #    0.472 /sec
+            449741      page-faults               #  785.665 /sec
+     1826996475701      cycles                    #    3.192 GHz
+      462826250646      stalled-cycles-frontend   #   25.33% frontend cycles idle
+      215305051966      stalled-cycles-backend    #   11.78% backend cycles idle
+     4606843618553      instructions              #    2.52  insn per cycle
+                                                  #    0.10  stalled cycles per insn
+      196578197904      branches                  #  343.408 M/sec
+        5710336772      branch-misses             #    2.90% of all branches
+
+     576.804360695 seconds time elapsed
+
+     565.814788000 seconds user
+       7.203990000 seconds sys
+

@@ -1,0 +1,207 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.28s (114585 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode   Workload     Report Type      Benchmarks
+--------   --------   --------   ----------------   ---------------------------
+validate   speed      refspeed   SPECspeed2017_fp   649.fotonik3d_s            
+-------------------------------------------------------------------------------
+
+Setting up environment for running 649.fotonik3d_s...
+Starting runcpu for 649.fotonik3d_s...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 649.fotonik3d_s
+Compiling Binaries
+  Up to date 649.fotonik3d_s base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 649.fotonik3d_s refspeed (ref) base Rubens-m64: run_base_refspeed_Rubens-m64.0000
+Running Benchmarks
+  Running 649.fotonik3d_s refspeed (ref) base Rubens-m64 [2023-06-05 06:08:52]
+649.fotonik3d_s: copy 0 non-zero return code (exit code=137, signal=0)
+
+****************************************
+Contents of fotonik3d_s.err
+****************************************
+Killed
+
+****************************************
+****************************************
+Contents of inputgen.out
+****************************************
+specinvoke r4356
+ Invoked as: /usr/local/spec_cpu2017/bin/specinvoke -d /usr/local/spec_cpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_Rubens-m64.0000 -f inputgen.cmd -e inputgen.err -o inputgen.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: LOGNAME=root
+ # 2: SUDO_GID=1000
+ # 3: LANG=C.UTF-8
+ # 4: XDG_SESSION_TYPE=tty
+ # 5: DISPLAY=:0
+ # 6: SUDO_UID=1000
+ # 7: LESSOPEN=| /usr/bin/lesspipe %s
+ # 8: HOME=/root
+ # 9: SUDO_COMMAND=/bin/bash
+ #10: SHELL=/bin/bash
+ #11: USER=root
+ #12: SPEC=/usr/local/spec_cpu2017
+ #13: PWD=/usr/local/spec_cpu2017/config
+ #14: SUDO_USER=rubens
+ #15: LC_LANG=C
+ #16: PATH=/root/libexec/perf-core:/usr/local/spec_cpu2017/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+ #17: XDG_SESSION_CLASS=user
+ #18: XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+ #19: LD_LIBRARY_PATH=/usr/lib64/:/usr/lib/:/lib64
+ #20: _=/usr/local/bin/perf
+ #21: LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.
+webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+ #22: MOTD_SHOWN=update-motd
+ #23: LC_ALL=C
+ #24: LESSCLOSE=/usr/bin/lesspipe %s %s
+ #25: XDG_SESSION_ID=c4
+ #26: SHLVL=2
+ #27: TERM=xterm-256color
+ #28: OLDPWD=/usr/local/spec_cpu2017
+ #29: OMP_STACKSIZE=120M
+ #30: LIBC_FATAL_STDERR_=1
+ #31: PERF_BUILDID_DIR=/root/.debug
+ #32: XDG_RUNTIME_DIR=/run/user/0
+ #33: MAIL=/var/mail/root
+ #34: SPECDB_PWD=/usr/local/spec_cpu2017/config
+ #35: DEBUGINFOD_URLS=
+ #36: SPECPERLLIB=/usr/local/spec_cpu2017/bin/lib:/usr/local/spec_cpu2017/bin
+ #37: OMP_NUM_THREADS=1
+ #38: OMP_THREAD_LIMIT=1
+running commands in inputgen.cmd 1 times
+runs started at		1685956128, 074190000, Mon Jun  5 06:08:48 2023
+run 1 started at	1685956128, 074226000, Mon Jun  5 06:08:48 2023
+child started: 0,	1685956128, 074236000, pid=6307, '/usr/local/spec_cpu2017/bin/specxz -dc OBJ.dat.xz > OBJ.dat 2>> OBJ.dat.gen.err'
+child finished: 0,	1685956129, 549108000, sec=1, nsec=474872000, pid=6307, rc=0
+run 1 finished at:	1685956129, 549126000, Mon Jun  5 06:08:49 2023
+run 1 elapsed time:	         1, 474900000, 1.474900000
+runs finished at	1685956129, 549157000, Mon Jun  5 06:08:49 2023
+runs elapsed time:	         1, 474967000, 1.474967000
+specinvoke exit: rc=0
+
+****************************************
+****************************************
+Contents of speccmds.out
+****************************************
+specinvoke r4356
+ Invoked as: /usr/local/spec_cpu2017/bin/specinvoke -d /usr/local/spec_cpu2017/benchspec/CPU/649.fotonik3d_s/run/run_base_refspeed_Rubens-m64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: OLDPWD=/usr/local/spec_cpu2017
+ # 2: SHLVL=2
+ # 3: XDG_SESSION_ID=c4
+ # 4: TERM=xterm-256color
+ # 5: LC_ALL=C
+ # 6: LESSCLOSE=/usr/bin/lesspipe %s %s
+ # 7: MOTD_SHOWN=update-motd
+ # 8: LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.
+webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+ # 9: SPECPERLLIB=/usr/local/spec_cpu2017/bin/lib:/usr/local/spec_cpu2017/bin
+ #10: SPECDB_PWD=/usr/local/spec_cpu2017/config
+ #11: MAIL=/var/mail/root
+ #12: DEBUGINFOD_URLS=
+ #13: XDG_RUNTIME_DIR=/run/user/0
+ #14: PERF_BUILDID_DIR=/root/.debug
+ #15: OMP_STACKSIZE=120M
+ #16: LIBC_FATAL_STDERR_=1
+ #17: LESSOPEN=| /usr/bin/lesspipe %s
+ #18: USER=root
+ #19: SHELL=/bin/bash
+ #20: HOME=/root
+ #21: SUDO_COMMAND=/bin/bash
+ #22: XDG_SESSION_TYPE=tty
+ #23: SUDO_UID=1000
+ #24: DISPLAY=:0
+ #25: SUDO_GID=1000
+ #26: LOGNAME=root
+ #27: LANG=C.UTF-8
+ #28: XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+ #29: _=/usr/local/bin/perf
+ #30: LD_LIBRARY_PATH=/usr/lib64/:/usr/lib/:/lib64
+ #31: XDG_SESSION_CLASS=user
+ #32: LC_LANG=C
+ #33: PATH=/root/libexec/perf-core:/usr/local/spec_cpu2017/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+ #34: SUDO_USER=rubens
+ #35: SPEC=/usr/local/spec_cpu2017
+ #36: PWD=/usr/local/spec_cpu2017/config
+ #37: OMP_NUM_THREADS=1
+ #38: OMP_THREAD_LIMIT=1
+running commands in speccmds.cmd 1 times
+runs started at		1685956132, 792129000, Mon Jun  5 06:08:52 2023
+run 1 started at	1685956132, 792164000, Mon Jun  5 06:08:52 2023
+child started: 0,	1685956132, 792175000, pid=6317, '../run_base_refspeed_Rubens-m64.0000/fotonik3d_s_base.Rubens-m64 > fotonik3d_s.log 2>> fotonik3d_s.err'
+child finished: 0,	1685956180, 410384000, sec=47, nsec=618209000, pid=6317, rc=35072
+run 1 finished at:	1685956180, 533598000, Mon Jun  5 06:09:40 2023
+run 1 elapsed time:	        47, 741434000, 47.741434000
+runs finished at	1685956180, 555010000, Mon Jun  5 06:09:40 2023
+runs elapsed time:	        47, 762881000, 47.762881000
+error: a total of 1 children finished with errors
+specinvoke exit: rc=0
+
+****************************************
+Error: 1x649.fotonik3d_s
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refspeed (ref)
+   metric: SPECspeed2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.089.fpspeed.refspeed.rsf
+Parsing flags for 649.fotonik3d_s base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.089.fpspeed.refspeed.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.089.fpspeed.refspeed.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.089.fpspeed.refspeed.csv
+    format: PDF -> 
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.089.fpspeed.refspeed.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.089.fpspeed.refspeed.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.089.fpspeed.refspeed.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.089.log
+
+runcpu finished at 2023-06-05 06:09:54; 75 total seconds elapsed
+
+ Performance counter stats for 'runcpu --config=projeto04 --noreportable --iterations=1 649.fotonik3d_s':
+
+          62532.67 msec task-clock                #    0.798 CPUs utilized
+             29996      context-switches          #  479.685 /sec
+               565      cpu-migrations            #    9.035 /sec
+           1134653      page-faults               #   18.145 K/sec
+      191170121810      cycles                    #    3.057 GHz
+       60790252085      stalled-cycles-frontend   #   31.80% frontend cycles idle
+       36255161807      stalled-cycles-backend    #   18.96% backend cycles idle
+      347184298983      instructions              #    1.82  insn per cycle
+                                                  #    0.18  stalled cycles per insn
+       66732597023      branches                  #    1.067 G/sec
+         337168684      branch-misses             #    0.51% of all branches
+
+      78.318471263 seconds time elapsed
+
+      54.621199000 seconds user
+       8.437094000 seconds sys
+

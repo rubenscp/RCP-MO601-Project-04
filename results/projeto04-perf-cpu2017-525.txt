@@ -1,0 +1,82 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.19s (170478 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode   Workload     Report Type      Benchmarks
+--------   --------   --------   ----------------   ---------------------------
+validate   rate       refrate    SPECrate2017_int   525.x264_r                 
+-------------------------------------------------------------------------------
+
+Setting up environment for running 525.x264_r...
+Starting runcpu for 525.x264_r...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 525.x264_r
+Compiling Binaries
+  Up to date 525.x264_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 525.x264_r refrate (ref) base Rubens-m64 (1 copy): run_base_refrate_Rubens-m64.0024
+Running Benchmarks
+  Running 525.x264_r refrate (ref) base Rubens-m64 (1 copy) [2023-06-05 01:32:26]
+Success: 1x525.x264_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refrate (ref)
+   metric: SPECrate2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.085.intrate.refrate.rsf
+Parsing flags for 525.x264_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.085.intrate.refrate.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.085.intrate.refrate.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.085.intrate.refrate.csv
+    format: PDF -> 
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.085.intrate.refrate.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.085.intrate.refrate.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.085.intrate.refrate.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.085.log
+
+runcpu finished at 2023-06-05 01:41:04; 572 total seconds elapsed
+
+ Performance counter stats for 'runcpu --config=projeto04 --noreportable --iterations=1 525.x264_r':
+
+         568180.15 msec task-clock                #    0.992 CPUs utilized
+             18800      context-switches          #   33.088 /sec
+               291      cpu-migrations            #    0.512 /sec
+            449692      page-faults               #  791.460 /sec
+     1817867251746      cycles                    #    3.199 GHz
+      454044917711      stalled-cycles-frontend   #   24.98% frontend cycles idle
+      209682195519      stalled-cycles-backend    #   11.53% backend cycles idle
+     4605429581955      instructions              #    2.53  insn per cycle
+                                                  #    0.10  stalled cycles per insn
+      196278938070      branches                  #  345.452 M/sec
+        5703867152      branch-misses             #    2.91% of all branches
+
+     572.714624367 seconds time elapsed
+
+     562.062571000 seconds user
+       6.702503000 seconds sys
+

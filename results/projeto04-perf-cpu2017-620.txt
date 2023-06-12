@@ -1,0 +1,83 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.19s (169530 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode   Workload      Report Type      Benchmarks
+--------   --------   --------   -----------------   --------------------------
+validate   speed      refspeed   SPECspeed2017_int   620.omnetpp_s             
+-------------------------------------------------------------------------------
+
+Setting up environment for running 620.omnetpp_s...
+Starting runcpu for 620.omnetpp_s...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 620.omnetpp_s
+Compiling Binaries
+  Up to date 620.omnetpp_s base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 620.omnetpp_s refspeed (ref) base Rubens-m64: run_base_refspeed_Rubens-m64.0001
+Running Benchmarks
+  Running 620.omnetpp_s refspeed (ref) base Rubens-m64 [2023-06-05 00:47:13]
+Success: 1x620.omnetpp_s
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refspeed (ref)
+   metric: SPECspeed2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.081.intspeed.refspeed.rsf
+Parsing flags for 620.omnetpp_s base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.081.intspeed.refspeed.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.081.intspeed.refspeed.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.081.intspeed.refspeed.csv
+    format: PDF -> 
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.081.intspeed.refspeed.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.081.intspeed.refspeed.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.081.intspeed.refspeed.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.081.log
+
+runcpu finished at 2023-06-05 01:00:07; 780 total seconds elapsed
+
+
+ Performance counter stats for 'runcpu --config=projeto04 --noreportable --iterations=1 620.omnetpp_s':
+
+         781334.86 msec task-clock                #    1.001 CPUs utilized
+             16925      context-switches          #   21.662 /sec
+               252      cpu-migrations            #    0.323 /sec
+            342855      page-faults               #  438.807 /sec
+     2415686527112      cycles                    #    3.092 GHz
+     1856498790325      stalled-cycles-frontend   #   76.85% frontend cycles idle
+     1519035885272      stalled-cycles-backend    #   62.88% backend cycles idle
+     1232757062682      instructions              #    0.51  insn per cycle
+                                                  #    1.51  stalled cycles per insn
+      246598796008      branches                  #  315.612 M/sec
+        5652668593      branch-misses             #    2.29% of all branches
+
+     780.438542991 seconds time elapsed
+
+     779.372863000 seconds user
+       2.681242000 seconds sys
+

@@ -1,0 +1,82 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.19s (170290 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode   Workload     Report Type     Benchmarks
+--------   --------   --------   ---------------   ----------------------------
+validate   rate       refrate    SPECrate2017_fp   538.imagick_r               
+-------------------------------------------------------------------------------
+
+Setting up environment for running 538.imagick_r...
+Starting runcpu for 538.imagick_r...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 538.imagick_r
+Compiling Binaries
+  Up to date 538.imagick_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 538.imagick_r refrate (ref) base Rubens-m64 (1 copy): run_base_refrate_Rubens-m64.0000
+Running Benchmarks
+  Running 538.imagick_r refrate (ref) base Rubens-m64 (1 copy) [2023-06-05 06:27:33]
+Success: 1x538.imagick_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refrate (ref)
+   metric: SPECrate2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.091.fprate.refrate.rsf
+Parsing flags for 538.imagick_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.091.fprate.refrate.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.091.fprate.refrate.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.091.fprate.refrate.csv
+    format: PDF -> 
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.091.fprate.refrate.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.091.fprate.refrate.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.091.fprate.refrate.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.091.log
+
+runcpu finished at 2023-06-05 06:36:47; 559 total seconds elapsed
+
+ Performance counter stats for 'runcpu --config=projeto04 --noreportable --iterations=1 538.imagick_r':
+
+         559865.90 msec task-clock                #    1.000 CPUs utilized
+             12277      context-switches          #   21.928 /sec
+               183      cpu-migrations            #    0.327 /sec
+            288792      page-faults               #  515.824 /sec
+     1799915281828      cycles                    #    3.215 GHz
+      470151897415      stalled-cycles-frontend   #   26.12% frontend cycles idle
+      102189105341      stalled-cycles-backend    #    5.68% backend cycles idle
+     4098276981208      instructions              #    2.28  insn per cycle
+                                                  #    0.11  stalled cycles per insn
+      454609433971      branches                  #  811.997 M/sec
+        2682406221      branch-misses             #    0.59% of all branches
+
+     559.847753762 seconds time elapsed
+
+     558.275372000 seconds user
+       2.051952000 seconds sys
+

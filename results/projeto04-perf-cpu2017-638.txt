@@ -1,0 +1,82 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.18s (174497 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode   Workload     Report Type      Benchmarks
+--------   --------   --------   ----------------   ---------------------------
+validate   speed      refspeed   SPECspeed2017_fp   638.imagick_s              
+-------------------------------------------------------------------------------
+
+Setting up environment for running 638.imagick_s...
+Starting runcpu for 638.imagick_s...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 638.imagick_s
+Compiling Binaries
+  Up to date 638.imagick_s base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 638.imagick_s refspeed (ref) base Rubens-m64: run_base_refspeed_Rubens-m64.0000
+Running Benchmarks
+  Running 638.imagick_s refspeed (ref) base Rubens-m64 [2023-06-05 03:24:20]
+Success: 1x638.imagick_s
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refspeed (ref)
+   metric: SPECspeed2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.088.fpspeed.refspeed.rsf
+Parsing flags for 638.imagick_s base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.088.fpspeed.refspeed.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.088.fpspeed.refspeed.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.088.fpspeed.refspeed.csv
+    format: PDF -> 
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.088.fpspeed.refspeed.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.088.fpspeed.refspeed.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.088.fpspeed.refspeed.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.088.log
+
+runcpu finished at 2023-06-05 06:08:36; 9860 total seconds elapsed
+
+ Performance counter stats for 'runcpu --config=projeto04 --noreportable --iterations=1 638.imagick_s':
+
+        9885396.69 msec task-clock                #    1.002 CPUs utilized
+            229085      context-switches          #   23.174 /sec
+               883      cpu-migrations            #    0.089 /sec
+           1796066      page-faults               #  181.689 /sec
+    31640567351734      cycles                    #    3.201 GHz
+    10480257741870      stalled-cycles-frontend   #   33.12% frontend cycles idle
+     2416128678315      stalled-cycles-backend    #    7.64% backend cycles idle
+    64430187824838      instructions              #    2.04  insn per cycle
+                                                  #    0.16  stalled cycles per insn
+     6904688217288      branches                  #  698.474 M/sec
+       30278844264      branch-misses             #    0.44% of all branches
+
+    9863.025574036 seconds time elapsed
+
+    9865.874127000 seconds user
+      27.213914000 seconds sys
+

@@ -1,0 +1,83 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.19s (171568 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode   Workload     Report Type      Benchmarks
+--------   --------   --------   ----------------   ---------------------------
+validate   speed      refspeed   SPECspeed2017_fp   621.wrf_s                  
+-------------------------------------------------------------------------------
+
+Setting up environment for running 621.wrf_s...
+Starting runcpu for 621.wrf_s...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 621.wrf_s
+Compiling Binaries
+  Up to date 621.wrf_s base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 621.wrf_s refspeed (ref) base Rubens-m64: run_base_refspeed_Rubens-m64.0000
+Running Benchmarks
+  Running 621.wrf_s refspeed (ref) base Rubens-m64 [2023-06-05 01:48:17]
+Success: 1x621.wrf_s
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refspeed (ref)
+   metric: SPECspeed2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.087.fpspeed.refspeed.rsf
+Parsing flags for 621.wrf_s base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.087.fpspeed.refspeed.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.087.fpspeed.refspeed.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.087.fpspeed.refspeed.csv
+    format: PDF -> 
+A line in your Compiler Version Notes section is too long!
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.087.fpspeed.refspeed.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.087.fpspeed.refspeed.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.087.fpspeed.refspeed.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.087.log
+
+runcpu finished at 2023-06-05 03:24:15; 5767 total seconds elapsed
+
+ Performance counter stats for 'runcpu --config=projeto04 --noreportable --iterations=1 621.wrf_s':
+
+        5788248.89 msec task-clock                #    1.004 CPUs utilized
+            123817      context-switches          #   21.391 /sec
+              1425      cpu-migrations            #    0.246 /sec
+          13236703      page-faults               #    2.287 K/sec
+    18478267164877      cycles                    #    3.192 GHz
+    11376923343498      stalled-cycles-frontend   #   61.57% frontend cycles idle
+     6303731473816      stalled-cycles-backend    #   34.11% backend cycles idle
+    20043292977959      instructions              #    1.08  insn per cycle
+                                                  #    0.57  stalled cycles per insn
+     1532747281857      branches                  #  264.803 M/sec
+       25613063479      branch-misses             #    1.67% of all branches
+
+    5767.914081500 seconds time elapsed
+
+    5751.239307000 seconds user
+      41.673499000 seconds sys
+

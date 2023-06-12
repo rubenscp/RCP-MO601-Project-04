@@ -1,0 +1,82 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.19s (168464 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode   Workload      Report Type      Benchmarks
+--------   --------   --------   -----------------   --------------------------
+validate   speed      refspeed   SPECspeed2017_int   631.deepsjeng_s           
+-------------------------------------------------------------------------------
+
+Setting up environment for running 631.deepsjeng_s...
+Starting runcpu for 631.deepsjeng_s...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 631.deepsjeng_s
+Compiling Binaries
+  Up to date 631.deepsjeng_s base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 631.deepsjeng_s refspeed (ref) base Rubens-m64: run_base_refspeed_Rubens-m64.0000
+Running Benchmarks
+  Running 631.deepsjeng_s refspeed (ref) base Rubens-m64 [2023-06-05 01:09:48]
+Success: 1x631.deepsjeng_s
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refspeed (ref)
+   metric: SPECspeed2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.083.intspeed.refspeed.rsf
+Parsing flags for 631.deepsjeng_s base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.083.intspeed.refspeed.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.083.intspeed.refspeed.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.083.intspeed.refspeed.csv
+    format: PDF -> 
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.083.intspeed.refspeed.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.083.intspeed.refspeed.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.083.intspeed.refspeed.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.083.log
+
+runcpu finished at 2023-06-05 01:18:42; 538 total seconds elapsed
+
+Performance counter stats for 'runcpu --config=projeto04 --noreportable --iterations=1 631.deepsjeng_s':
+
+         527856.52 msec task-clock                #    0.976 CPUs utilized
+             68774      context-switches          #  130.289 /sec
+               304      cpu-migrations            #    0.576 /sec
+           1280319      page-faults               #    2.426 K/sec
+     1668159428830      cycles                    #    3.160 GHz
+      715319151262      stalled-cycles-frontend   #   42.88% frontend cycles idle
+      561594599367      stalled-cycles-backend    #   33.67% backend cycles idle
+     2293851692553      instructions              #    1.38  insn per cycle
+                                                  #    0.31  stalled cycles per insn
+      331918525295      branches                  #  628.804 M/sec
+       12396618513      branch-misses             #    3.73% of all branches
+
+     541.108920829 seconds time elapsed
+
+     516.911943000 seconds user
+      12.206668000 seconds sys
+
