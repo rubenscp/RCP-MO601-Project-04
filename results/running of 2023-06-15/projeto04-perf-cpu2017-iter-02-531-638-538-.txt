@@ -1,0 +1,413 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.32s (101344 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode        Workload          Report Type      Benchmarks
+--------   --------   ------------------   ----------------   -----------------
+validate   rate       test,train,refrate   SPECrate2017_int   531.deepsjeng_r
+-------------------------------------------------------------------------------
+
+Setting up environment for running 531.deepsjeng_r...
+Starting runcpu for 531.deepsjeng_r...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 531.deepsjeng_r
+Compiling Binaries
+  Up to date 531.deepsjeng_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 531.deepsjeng_r test base Rubens-m64 (1 copy): run_base_test_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 531.deepsjeng_r test base Rubens-m64 (1 copy) [2023-06-15 16:59:01]
+  Running (#2) 531.deepsjeng_r test base Rubens-m64 (1 copy) [2023-06-15 16:59:15]
+Success: 2x531.deepsjeng_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: test
+   metric: SPECrate2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.rsf
+Parsing flags for 531.deepsjeng_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.txt
+Benchmarks selected: 531.deepsjeng_r
+Compiling Binaries
+  Up to date 531.deepsjeng_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 531.deepsjeng_r train base Rubens-m64 (1 copy): run_base_train_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 531.deepsjeng_r train base Rubens-m64 (1 copy) [2023-06-15 16:59:43]
+  Running (#2) 531.deepsjeng_r train base Rubens-m64 (1 copy) [2023-06-15 17:01:43]
+Success: 2x531.deepsjeng_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: train
+   metric: SPECrate2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.rsf
+Parsing flags for 531.deepsjeng_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.txt
+Benchmarks selected: 531.deepsjeng_r
+Compiling Binaries
+  Up to date 531.deepsjeng_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 531.deepsjeng_r refrate (ref) base Rubens-m64 (1 copy): run_base_refrate_Rubens-m64.0020
+Running Benchmarks
+  Running (#1) 531.deepsjeng_r refrate (ref) base Rubens-m64 (1 copy) [2023-06-15 17:03:29]
+  Running (#2) 531.deepsjeng_r refrate (ref) base Rubens-m64 (1 copy) [2023-06-15 17:11:52]
+Success: 2x531.deepsjeng_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refrate (ref)
+   metric: SPECrate2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.rsf
+Parsing flags for 531.deepsjeng_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.094.log
+
+runcpu finished at 2023-06-15 17:18:39; 1183 total seconds elapsed
+
+ Performance counter stats for 'runcpu --config=projeto04 --size=all --iterations=2 531.deepsjeng_r':
+
+        1182840.36 msec task-clock                #    0.999 CPUs utilized
+             26933      context-switches          #   22.770 /sec
+               342      cpu-migrations            #    0.289 /sec
+            666142      page-faults               #  563.172 /sec
+     3405963388686      cycles                    #    2.879 GHz
+     1450323535641      stalled-cycles-frontend   #   42.58% frontend cycles idle
+     1019216480885      stalled-cycles-backend    #   29.92% backend cycles idle
+     4696992734505      instructions              #    1.38  insn per cycle
+                                                  #    0.31  stalled cycles per insn
+      681207792782      branches                  #  575.908 M/sec
+       26826919565      branch-misses             #    3.94% of all branches
+
+    1183.436331384 seconds time elapsed
+
+    1177.954975000 seconds user
+       5.967920000 seconds sys
+
+
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.18s (183364 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode        Workload           Report Type      Benchmarks
+--------   --------   -------------------   ----------------   ----------------
+validate   speed      test,train,refspeed   SPECspeed2017_fp   638.imagick_s
+-------------------------------------------------------------------------------
+
+Setting up environment for running 638.imagick_s...
+Starting runcpu for 638.imagick_s...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 638.imagick_s
+Compiling Binaries
+  Up to date 638.imagick_s base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 638.imagick_s test base Rubens-m64: run_base_test_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 638.imagick_s test base Rubens-m64 threads:4 [2023-06-15 17:18:43]
+  Running (#2) 638.imagick_s test base Rubens-m64 threads:4 [2023-06-15 17:18:44]
+Success: 2x638.imagick_s
+Producing Raw Reports
+ label: Rubens-m64
+  workload: test
+   metric: SPECspeed2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.test.rsf
+Parsing flags for 638.imagick_s base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.test.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.test.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.test.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.test.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.test.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.test.txt
+Benchmarks selected: 638.imagick_s
+Compiling Binaries
+  Up to date 638.imagick_s base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 638.imagick_s train base Rubens-m64: run_base_train_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 638.imagick_s train base Rubens-m64 threads:4 [2023-06-15 17:18:52]
+  Running (#2) 638.imagick_s train base Rubens-m64 threads:4 [2023-06-15 17:19:14]
+Success: 2x638.imagick_s
+Producing Raw Reports
+ label: Rubens-m64
+  workload: train
+   metric: SPECspeed2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.train.rsf
+Parsing flags for 638.imagick_s base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.train.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.train.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.train.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.train.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.train.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.train.txt
+Benchmarks selected: 638.imagick_s
+Compiling Binaries
+  Up to date 638.imagick_s base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 638.imagick_s refspeed (ref) base Rubens-m64: run_base_refspeed_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 638.imagick_s refspeed (ref) base Rubens-m64 threads:4 [2023-06-15 17:19:43]
+  Running (#2) 638.imagick_s refspeed (ref) base Rubens-m64 threads:4 [2023-06-15 18:52:54]
+Success: 2x638.imagick_s
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refspeed (ref)
+   metric: SPECspeed2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.refspeed.rsf
+Parsing flags for 638.imagick_s base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.refspeed.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.refspeed.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.refspeed.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.refspeed.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.refspeed.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.095.fpspeed.refspeed.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.095.log
+
+runcpu finished at 2023-06-15 20:23:33; 11094 total seconds elapsed
+
+ Performance counter stats for 'runcpu --config=projeto04 --size=all --iterations=2 638.imagick_s':
+
+       43994664.98 msec task-clock                #    3.965 CPUs utilized
+            772704      context-switches          #   17.564 /sec
+               914      cpu-migrations            #    0.021 /sec
+           1221723      page-faults               #   27.770 /sec
+   122587511934314      cycles                    #    2.786 GHz
+    83858796586542      stalled-cycles-frontend   #   68.41% frontend cycles idle
+    30808089482378      stalled-cycles-backend    #   25.13% backend cycles idle
+   129433546061031      instructions              #    1.06  insn per cycle
+                                                  #    0.65  stalled cycles per insn
+    13849008406281      branches                  #  314.788 M/sec
+       61258154169      branch-misses             #    0.44% of all branches
+
+   11096.521223155 seconds time elapsed
+
+   43947.503591000 seconds user
+      50.123161000 seconds sys
+
+
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.18s (177418 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode        Workload          Report Type     Benchmarks
+--------   --------   ------------------   ---------------   ------------------
+validate   rate       test,train,refrate   SPECrate2017_fp   538.imagick_r
+-------------------------------------------------------------------------------
+
+Setting up environment for running 538.imagick_r...
+Starting runcpu for 538.imagick_r...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 538.imagick_r
+Compiling Binaries
+  Up to date 538.imagick_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 538.imagick_r test base Rubens-m64 (1 copy): run_base_test_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 538.imagick_r test base Rubens-m64 (1 copy) [2023-06-15 20:23:40]
+  Running (#2) 538.imagick_r test base Rubens-m64 (1 copy) [2023-06-15 20:23:41]
+Success: 2x538.imagick_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: test
+   metric: SPECrate2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.test.rsf
+Parsing flags for 538.imagick_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.test.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.test.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.test.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.096.fprate.test.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.test.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.test.txt
+Benchmarks selected: 538.imagick_r
+Compiling Binaries
+  Up to date 538.imagick_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 538.imagick_r train base Rubens-m64 (1 copy): run_base_train_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 538.imagick_r train base Rubens-m64 (1 copy) [2023-06-15 20:23:50]
+  Running (#2) 538.imagick_r train base Rubens-m64 (1 copy) [2023-06-15 20:24:29]
+Success: 2x538.imagick_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: train
+   metric: SPECrate2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.train.rsf
+Parsing flags for 538.imagick_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.train.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.train.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.train.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.096.fprate.train.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.train.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.train.txt
+Benchmarks selected: 538.imagick_r
+Compiling Binaries
+  Up to date 538.imagick_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 538.imagick_r refrate (ref) base Rubens-m64 (1 copy): run_base_refrate_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 538.imagick_r refrate (ref) base Rubens-m64 (1 copy) [2023-06-15 20:25:15]
+  Running (#2) 538.imagick_r refrate (ref) base Rubens-m64 (1 copy) [2023-06-15 20:34:17]
+Success: 2x538.imagick_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refrate (ref)
+   metric: SPECrate2017_fp_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.refrate.rsf
+Parsing flags for 538.imagick_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.refrate.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.refrate.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.refrate.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.096.fprate.refrate.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.refrate.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.096.fprate.refrate.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.096.log
+
+runcpu finished at 2023-06-15 20:43:56; 1220 total seconds elapsed
+
+ Performance counter stats for 'runcpu --config=projeto04 --size=all --iterations=2 538.imagick_r':
+
+        1219618.49 msec task-clock                #    0.999 CPUs utilized
+             26769      context-switches          #   21.949 /sec
+               270      cpu-migrations            #    0.221 /sec
+            709912      page-faults               #  582.077 /sec
+     3905267919375      cycles                    #    3.202 GHz
+     1058430390394      stalled-cycles-frontend   #   27.10% frontend cycles idle
+      218133815331      stalled-cycles-backend    #    5.59% backend cycles idle
+     8790366635636      instructions              #    2.25  insn per cycle
+                                                  #    0.12  stalled cycles per insn
+      952933432346      branches                  #  781.337 M/sec
+        5521984521      branch-misses             #    0.58% of all branches
+
+    1220.861824955 seconds time elapsed
+
+    1215.965404000 seconds user
+       4.576159000 seconds sys
+

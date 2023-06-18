@@ -1,0 +1,136 @@
+SPEC CPU(r) 2017 Benchmark Suites
+Copyright 1995-2019 Standard Performance Evaluation Corporation (SPEC)
+
+runcpu v6612
+Using 'linux-x86_64' tools
+Reading file manifests... read 32225 entries from 2 files in 0.32s (101344 files/s)
+Loading runcpu modules.................
+Locating benchmarks...found 47 benchmarks in 73 benchsets.
+Reading config file '/usr/local/spec_cpu2017/config/projeto04.cfg'
+1 configuration selected:
+
+ Action    Run Mode        Workload          Report Type      Benchmarks
+--------   --------   ------------------   ----------------   -----------------
+validate   rate       test,train,refrate   SPECrate2017_int   531.deepsjeng_r
+-------------------------------------------------------------------------------
+
+Setting up environment for running 531.deepsjeng_r...
+Starting runcpu for 531.deepsjeng_r...
+Running "specperl /usr/local/spec_cpu2017/bin/sysinfo" to gather system information.
+sysinfo: r6732 of 2022-11-07 (fe91c89b7ed5c36ae2c92cc097bec197)
+sysinfo: ...getting basic information about kernel, users, and limits
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting info from systemd
+sysinfo: ...getting power info
+sysinfo: ...getting system tuning info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...getting info from /sys/devices/virtual/dmi/id
+sysinfo: ...getting info from dmidecode
+Retrieving flags file (/usr/local/spec_cpu2017/config/flags/gcc.xml)...
+Benchmarks selected: 531.deepsjeng_r
+Compiling Binaries
+  Up to date 531.deepsjeng_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 531.deepsjeng_r test base Rubens-m64 (1 copy): run_base_test_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 531.deepsjeng_r test base Rubens-m64 (1 copy) [2023-06-15 16:59:01]
+  Running (#2) 531.deepsjeng_r test base Rubens-m64 (1 copy) [2023-06-15 16:59:15]
+Success: 2x531.deepsjeng_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: test
+   metric: SPECrate2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.rsf
+Parsing flags for 531.deepsjeng_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.test.txt
+Benchmarks selected: 531.deepsjeng_r
+Compiling Binaries
+  Up to date 531.deepsjeng_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 531.deepsjeng_r train base Rubens-m64 (1 copy): run_base_train_Rubens-m64.0000
+Running Benchmarks
+  Running (#1) 531.deepsjeng_r train base Rubens-m64 (1 copy) [2023-06-15 16:59:43]
+  Running (#2) 531.deepsjeng_r train base Rubens-m64 (1 copy) [2023-06-15 17:01:43]
+Success: 2x531.deepsjeng_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: train
+   metric: SPECrate2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.rsf
+Parsing flags for 531.deepsjeng_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.train.txt
+Benchmarks selected: 531.deepsjeng_r
+Compiling Binaries
+  Up to date 531.deepsjeng_r base Rubens-m64
+
+
+Setting Up Run Directories
+  Setting up 531.deepsjeng_r refrate (ref) base Rubens-m64 (1 copy): run_base_refrate_Rubens-m64.0020
+Running Benchmarks
+  Running (#1) 531.deepsjeng_r refrate (ref) base Rubens-m64 (1 copy) [2023-06-15 17:03:29]
+  Running (#2) 531.deepsjeng_r refrate (ref) base Rubens-m64 (1 copy) [2023-06-15 17:11:52]
+Success: 2x531.deepsjeng_r
+Producing Raw Reports
+ label: Rubens-m64
+  workload: refrate (ref)
+   metric: SPECrate2017_int_base
+    format: raw -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.rsf
+Parsing flags for 531.deepsjeng_r base: done
+Doing flag reduction: done
+    format: flags -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.flags.html
+    format: cfg -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.cfg
+    format: CSV -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.csv
+    format: PDF ->
+A line in your Compiler Version Notes section is too long!
+
+/usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.pdf
+    format: HTML -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.html
+    format: Text -> /usr/local/spec_cpu2017/result/CPU2017.094.intrate.refrate.txt
+The log for this run is in /usr/local/spec_cpu2017/result/CPU2017.094.log
+
+runcpu finished at 2023-06-15 17:18:39; 1183 total seconds elapsed
+
+ Performance counter stats for 'runcpu --config=projeto04 --size=all --iterations=2 531.deepsjeng_r':
+
+        1182840.36 msec task-clock                #    0.999 CPUs utilized
+             26933      context-switches          #   22.770 /sec
+               342      cpu-migrations            #    0.289 /sec
+            666142      page-faults               #  563.172 /sec
+     3405963388686      cycles                    #    2.879 GHz
+     1450323535641      stalled-cycles-frontend   #   42.58% frontend cycles idle
+     1019216480885      stalled-cycles-backend    #   29.92% backend cycles idle
+     4696992734505      instructions              #    1.38  insn per cycle
+                                                  #    0.31  stalled cycles per insn
+      681207792782      branches                  #  575.908 M/sec
+       26826919565      branch-misses             #    3.94% of all branches
+
+    1183.436331384 seconds time elapsed
+
+    1177.954975000 seconds user
+       5.967920000 seconds sys
